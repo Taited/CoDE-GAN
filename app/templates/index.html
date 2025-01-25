@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoDE-GAN Fashion Editing</title>
+  <link href="{{ url_for('static', path='css.css') }}" rel="stylesheet">
+</head>
+
+<body>
+<div class="content_center">
+  <h2>CoDE-GAN: Content Decoupled and Enhanced GAN </h2>
+  <h2>for Sketch-guided Flexible Fashion Editing</h2>
+<div style="margin-top: 10px; margin-bottom: 10px">
+  <label for="layer">Choose the layer: </label>
+  <select id="layer">
+    <option value="mask">Mask Layer</option>
+    <option value="sketch">Sketch Layer</option>
+  </select>
+  <label for="mask-thickness">Thickness of Mask: </label>
+  <input type="range" id="mask-thickness" min="10" max="40" value="20">
+</div>
+<!-- <div style="margin-top: 10px; margin-bottom: 10px">
+  <label for="sketch-thickness">Thickness of Sketch: </label>
+  <input type="range" id="sketch-thickness" min="1" max="20" value="3">
+</div> -->
+<div class="layout">
+  <div>
+    <label for="image-input">Upload Image: </label>
+    <input type="file" id="image-input" accept="image/*">
+  </div>
+  <button onclick="inference()">Inference</button>
+  <button onclick="clearCanvas()">Clear</button>
+</div>
+
+<div id="canvas-container">
+  <canvas id="image-layer" width="350" height="350"></canvas>
+  <canvas id="mask-layer" width="350" height="350"></canvas>
+  <canvas id="sketch-layer" width="350" height="350"></canvas>
+  <canvas id="drawing-layer" width="350" height="350"></canvas>
+  <canvas id="drawing-layer1" width="350" height="350"></canvas>
+</div>
+
+<script src="static/js.js"></script>
+</div>
+</body>
+</html>
