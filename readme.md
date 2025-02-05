@@ -1,5 +1,5 @@
 ## CoDE-GAN: Content Decoupled and Enhanced GAN for Sketch-guided Flexible Fashion Editing
-<video src="medias/codegan-demo.mp4" controls width="600"></video>
+[🎥 Demo Video](https://github.com/Taited/CoDE-GAN/blob/main/medias/codegan-demo.mp4)
 ## Environment Requirements
 We have tested the requirements on ``torch==2.4.1`` in ``cuda-11.8``. But we believe this repository should have no speciall requirements for torch or cuda versions.
 1. Create a conda environment and install a torch that compatible with your cuda.
