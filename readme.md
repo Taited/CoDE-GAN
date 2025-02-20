@@ -3,6 +3,14 @@
 
 https://github.com/user-attachments/assets/8692c9ec-a53d-4fe9-95d6-9f5297b51867
 
+<a href="https://taited.github.io/codegan-project" target="_blank">
+  <img src="https://img.shields.io/badge/Project-Page-Green">
+</a>
+<a href="https://dl.acm.org/doi/10.1145/3712063" target="_blank">
+  <img src="https://img.shields.io/badge/Paper-Published-red">
+</a>
+
+This is the official implementation of CoDE-GAN (ToMM 2025). The trained weights and a more detailed README are in progress.
 
 ## Environment Requirements
 We have tested the requirements on ``torch==2.4.1`` in ``cuda-11.8``. But we believe this repository should have no speciall requirements for torch or cuda versions.
